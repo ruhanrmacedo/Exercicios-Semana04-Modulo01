@@ -9,8 +9,10 @@ function somar() {
     return resultado;
 }
 
+// Função para exibir o resultado da soma
 function gerarResultado() {
+    event.preventDefault();
     var resultado = somar();
-    document.getElementById("resultado").innerHTML = resultado;
+    document.getElementById("txt-resultado").innerHTML = "O resultado é: " + resultado;
     alert("O resultado é: " + resultado);
 }

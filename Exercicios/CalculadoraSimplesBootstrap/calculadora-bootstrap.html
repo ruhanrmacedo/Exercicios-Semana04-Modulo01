@@ -15,7 +15,6 @@
         <h1>Calculadora Simples</h1>
 
         <form>
-
             <div class="row g-3 align-items-center">
                 <div class="col-auto">
                     <label for="inputNumero1" class="col-form-label">Número 1</label>
@@ -24,8 +23,7 @@
                     <input type="number" id="inputNumero1" class="form-control">
                 </div>
             </div>
-
-            <!-- .margin-top-3 { margin-top: 30px} -->
+        
             <div class="row g-3 align-items-center mt-2 mb-4">
                 <div class="col-auto">
                     <label for="inputNumero2" class="col-form-label">Número 2</label>
@@ -33,13 +31,15 @@
                 <div class="col-auto">
                     <input type="number" id="inputNumero2" class="form-control">
                 </div>
-            </div>            
-
-            <button class="btn btn-outline-primary" onclick="gerarResultado()">Calcular</button>
+            </div>
+        
+            <div class="d-flex justify-content-center"> <!-- Nova div para centralizar o botão -->
+                <button class="btn btn-outline-primary" onclick="gerarResultado()">Calcular</button>
+            </div>
         </form>
 
         <h2>Resultado</h2>
-        <p id="resultado"></p>
+        <span id="txt-resultado"></span>
     </div>
 
 
