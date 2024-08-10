@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Classificação de Notas</h1>
+        <!-- Formulário para entrada de nome e nota -->
+        <form id="formulario">
+
+            <!-- Campos de entrada de nome e nota -->
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+            <label for="nota">Nota:</label>
+            <input type="number" name="nota" id="nota" required>
+
+            <!-- Botão para verificar a classificação da nota atráves da função gradeClassification() -->
+            <button type="button" class="btn-outline-primary" onclick="gradeClassification()">Verificar</button>    
+        </form>
+        
+        <!-- Parágrafo para exibir o resultado -->
+        <h2>Resultado</h2>
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Script para verificar a classificação da nota -->
+    <script src="script.js"></script>
+</body>
+</html>

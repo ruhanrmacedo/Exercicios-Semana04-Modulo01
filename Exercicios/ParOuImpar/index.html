@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Par ou Ímpar</h1>
+        <!-- Formulário para entrada de número -->
+        <form id="form">
+            <div class="row g-3 align-items-center">
+                <div class="col-auto">
+                    <label for="number" class="col-form-label">Número</label>
+                </div>
+                <div class="col-auto">
+                    <!-- Campo de entrada de número -->
+                    <input type="number" id="number" class="form-control">
+                </div>
+            </div>
+            <!-- Botão para verificar se o número é par ou ímpar atráves da função isEven() -->
+            <button type="button" class="btn btn-outline-primary" onclick="isEven()">Verificar</button>
+        </form>
+
+        <h2>Resultado</h2>
+        <!-- Parágrafo para exibir o resultado -->
+        <p id="resultado"></p>
+    </div>
+
+
+    <!-- Script para verificar se o número é par ou ímpar -->
+    <script src="script.js"></script>
+</body>
+</html>
